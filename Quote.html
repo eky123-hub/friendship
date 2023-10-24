@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Common styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: ;
+
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: #333;
+            display: flex;
+            
+            padding: 10px 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: times new roman;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .navbar a::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #ff6b6b;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s;
+        }
+
+        .navbar a:hover::before {
+            transform: scaleX(1);
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Page content styles */
+        .content {
+           padding: 0px;
+        }
+        }
+
+        /* Unique styles for each section */
+        section {
+            padding: 50px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+          .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: ghostwhite;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+     
+    }
+  
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+   <ul class="navbar">
+        <li><a href="friendship.html" style="font-size: 200%; font-family: times new roman; left: 90%; ">FRIENDSHIP</a></li>
+        <li><a href="home.html" style="left: 420%;">Home</a></li>
+        <li><a href="milky.html>" style="left: 415%; ">Milky</a></li>
+        <li><a href="Samantha.html" style="left: 480%;">Sam</a></li>
+        <li><a href="Video.html" style="left: 425%; ">Video</a></li>
+        <li><a href="Quote.html" style="left: 430%; ">Quote</a></li>
+    </ul>
+
+    <!-- Page Content -->
+    <div class="content">
+  
+    </section>
+<div class="container">
+ 
+  <p style=" color: maroon; font-family: Times New Roman; font-size: 300%;"> “A true friend is someone who thinks that you are a good egg even though he knows that you are slightly cracked.” — Bernard Meltzer.</p>
+  </div>
+ 
+          
+          
+   </section>
+    <script>
+        // Smooth scrolling for bookmark links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
